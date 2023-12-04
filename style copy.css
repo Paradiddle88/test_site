@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'News Cycle', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  font-weight: bold;
+}
+
+#header-boven {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3%;
+  position: sticky;
+  font-weight: bold;
+}
+
+#header-boven-links {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  text-align: center;
+}
+
+#header-boven-links img {
+  max-width: 100px;
+}
+
+#allangbinnen {
+  color: black;
+}
+
+#economie {
+  color: blue;
+}
+
+#sport {
+  color: red;
+}
+
+#mediacultuur {
+  color: darkorange;
+}
+
+#achterklap {
+  color: purple;
+}
+
+#shop {
+  color: black;
+}
+
+#meer {
+  color: black;
+}
+
+#header-boven-rechts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+}
+
+#header-boven-rechts img {
+  width: 10%;
+}
+
+#header-onder {
+  display: flex;
+  justify-content: space-between; 
+  padding: 0 3%;
+  visibility: hidden;
+  position: absolute;
+  color: grey;
+}
+
+#midden {
+  width: 100%;
+  padding: 3% 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#midden-links {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#midden-links img {
+  width: 100%;
+}
+
+#midden-links #hoofdplaatje {
+  position: relative;
+  width: 60%;
+}
+
+#midden-links #hoofdplaatje #overlay {
+  position: absolute;
+  bottom: 1%;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  color: black;
+  font-size: 1.4rem;
+  padding: 0 0 3% 3%;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 2rem;
+}
+
+#items-links-onder {
+  padding: 0.5% 3%;
+  font-size: 1.3rem;
+}
+
+#midden-rechts {
+  width: 45%;
+}
+
+#midden-rechts-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icoon-met-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+hr {
+  margin: 20px 0px;
+}
+
+.jaar {
+  width: 60px;
+  color: grey;
+}
+
+
+
+@media only screen and (max-width: 991px) {
+
+	#header-boven-links .nav-item {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  #header-boven-links {
+    width: 25%;
+  }
+
+  #header-boven-rechts {
+    width: 40%;
+  }
+  
+  #header-onder {
+    visibility: visible;
+    position: relative;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  #midden-rechts {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  #midden-links {
+    width: 100%;
+  }
+
+}
+
+/* Dit maakt de tekst in de foto kleiner op te smalle schermen */
+@media only screen and (max-width: 900px) {
+
+  #midden-links #hoofdplaatje #overlay {
+    font-size: 1.5rem;
+  }
+
+}
+/* Dit maakt de tekst in de foto kleiner op te smalle schermen */
+@media only screen and (max-width: 488px) {
+
+  #midden-links #hoofdplaatje #overlay {
+    font-size: 1.3rem;
+  }
+
+}
+
+@media only screen and (max-width: 570px) {
+  #midden-links {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #midden-links #hoofdplaatje #overlay {
+    font-size: 1rem;
+  }
+
+}
+
+/* Dit verbergt het woord 'inloggen' op hele smalle schermen */
+@media only screen and (max-width: 319px) {
+
+  #header-boven-rechts h3 {
+    visibility: hidden;
+    position: absolute;
+  }
+
+}
